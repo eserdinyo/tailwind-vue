@@ -1,0 +1,62 @@
+@tailwind base;
+
+.profil-box {
+  @apply p-4 border-solid border border-gray-400 rounded shadow w-64  flex items-center flex-col;
+}
+
+.btn {
+  @apply text-white bg-button px-4 py-1 rounded-lg;
+}
+
+.profil-box:hover {
+  @apply shadow-lg;
+}
+
+.sidebar-height {
+  height: calc(100vh - 55px);
+}
+
+.gameMinWidth {
+  min-width: 250px;
+  width: 260px;
+}
+.dot {
+  content: "";
+  top: 50%;
+  left: 0;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 99999px;
+  background-color: #24cb8d;
+  transform: translateY(-50%);
+}
+
+.p-2px {
+  padding: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #363848;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4e4f66;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4e4f66;
+}
+
+@tailwind components;
+
+@tailwind utilities;
